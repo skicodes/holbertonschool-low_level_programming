@@ -1,0 +1,2 @@
+#!/bin/bash
+F README
