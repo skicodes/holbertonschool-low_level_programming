@@ -1,2 +1,2 @@
 #!/bin/bash
-f u readme
+pwd
