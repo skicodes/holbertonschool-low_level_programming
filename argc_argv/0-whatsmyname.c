@@ -1,15 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - prints its own program name
  * @argc: argument count (unused)
- * @argv: argument vector (array of strings)
- * Return: 0
+ * @argv: array of arguments
+ *
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
-    (void)argc;            /* mark argc as unused */
-    printf("%s\n", argv[0]); /* print program name */
-    return 0;
+    int i;
+
+    (void)argc;
+
+    for (i = 0; argv[0][i] != '\0'; i++)
+        _putchar(argv[0][i]);
+
+    _putchar('\n');
+
+    return (0);
 }
