@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 
-#include <stddef.h>	/* for NULL */
+#include <stddef.h>  /* for NULL */
 
 /**
  * struct dog - Information about a dog
@@ -16,7 +16,8 @@ typedef struct dog
 	char *owner;
 } dog_t;
 
-/* Prototype of init_dog */
+/* Prototypes */
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 #endif /* DOG_H */
