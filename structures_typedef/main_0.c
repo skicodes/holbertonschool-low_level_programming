@@ -1,15 +1,12 @@
-#include "dog.h"
 #include <stdio.h>
+#include "dog.h"
 
 int main(void)
 {
-    struct dog my_dog;
+	dog_t *my_dog;
 
-    my_dog.name = "Poppy";
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
+	my_dog = new_dog("Ghost", 4.75, "Jon Snow");
+	printf("Name: %s\nAge: %.2f\nOwner: %s\n", my_dog->name, my_dog->age, my_dog->owner);
 
-    print_dog(&my_dog);  /* Now the compiler knows about print_dog */
-
-    return 0;
+	return 0;
 }
