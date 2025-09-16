@@ -4,10 +4,6 @@
 /**
  * print_dog - prints a struct dog
  * @d: pointer to struct dog to print
- *
- * Description: Prints the name, age, and owner of the dog.
- * If a member is NULL, prints (nil) instead.
- * If d is NULL, prints nothing.
  */
 void print_dog(struct dog *d)
 {
