@@ -14,10 +14,6 @@ typedef struct dog
 	char *name;
 	float age;
 	char *owner;
-} dog_t;
-
-/* Prototypes */
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
+} dog_t;  /* typedef so we can use dog_t as a type name */
 
 #endif /* DOG_H */
