@@ -2,11 +2,14 @@
 #define FUNCTION_POINTERS_H
 
 /**
- * function_pointers.h - Header file for function pointer utilities
- * @f: Function pointer to be used in functions
+ * print_name - Calls a function with a given name
+ * @name: The name to be used as parameter
+ * @f: Pointer to a function that takes a char * as parameter
+ *
+ * Description: This function passes the name to the function pointed to by f.
  */
-
 void print_name(char *name, void (*f)(char *));
+
 int _putchar(char c);
 
 #endif /* FUNCTION_POINTERS_H */
